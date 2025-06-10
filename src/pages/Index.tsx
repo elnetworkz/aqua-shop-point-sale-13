@@ -92,19 +92,19 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
-        <div className="container mx-auto px-6 py-4">
-          <h1 className="text-3xl font-bold">ระบบขายหน้าร้าน (POS)</h1>
-          <p className="text-blue-100 mt-1">Point of Sale System</p>
+        <div className="container mx-auto px-6 py-3">
+          <h1 className="text-xl font-bold">POS</h1>
+          <p className="text-blue-100 text-sm mt-1">Point of Sale System</p>
         </div>
       </header>
 
       {/* Main Content */}
       <div className="container mx-auto px-6 py-6">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-140px)]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-120px)]">
           {/* Products Section */}
           <div className="lg:col-span-2 bg-white rounded-xl shadow-lg border border-blue-100 p-6">
             <div className="mb-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">สินค้า</h2>
+              <h2 className="text-xl font-bold text-gray-800 mb-4">สินค้า</h2>
               <CategoryTabs
                 categories={categories}
                 activeCategory={activeCategory}
@@ -112,7 +112,7 @@ const Index = () => {
               />
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 overflow-y-auto max-h-[calc(100vh-320px)]">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 overflow-y-auto max-h-[calc(100vh-280px)]">
               {filteredProducts.map((product) => (
                 <ProductCard
                   key={product.id}
