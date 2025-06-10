@@ -86,9 +86,9 @@ const Index = () => {
       <div className="container mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-[calc(100vh-120px)]">
           {/* Products Section */}
-          <div className="lg:col-span-2 bg-white rounded-xl shadow-lg border border-blue-100 p-6">
+          <div className="lg:col-span-2 bg-white rounded-xl shadow-lg border border-blue-100 p-6 my-0 py-[16px] px-[16px]">
             <div className="mb-6">
-              <h2 className="text-xl font-bold text-gray-800 mb-4">สินค้า</h2>
+              
               <CategoryTabs categories={categories} activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
             </div>
             
