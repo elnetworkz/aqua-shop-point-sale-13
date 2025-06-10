@@ -24,7 +24,7 @@ export const Cart: React.FC<CartProps> = ({
   const total = subtotal + tax;
   const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
   return <Card className="h-full flex flex-col bg-gradient-to-b from-blue-50 to-white border-blue-200">
-      <CardHeader className="bg-blue-600 text-white rounded-t-lg py-[18px]">
+      <CardHeader className="bg-blue-600 text-white rounded-t-lg py-[12px]">
         <CardTitle className="flex items-center gap-2 text-lg">
           <ShoppingCart className="w-5 h-5" />
           ตระกร้าสินค้า ({itemCount} รายการ)
